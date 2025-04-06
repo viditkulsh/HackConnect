@@ -31,8 +31,8 @@ export default function Home() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="/setup-profile">
-              <Button size="lg" className="w-full text-lg py-6 bg-secondary hover:bg-secondary/90">
+            <Link href="/login">
+              <Button size="lg" className="w-full text-lg py-6 bg-secondary hover:bg-secondary/90 text-black">
                 Get Started
               </Button>
             </Link>

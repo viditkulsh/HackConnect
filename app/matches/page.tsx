@@ -81,7 +81,7 @@ export default function MatchesPage() {
                       />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-medium text-secondary">{user.name}</h3>
+                      <h3 className="font-medium text-primary">{user.name}</h3>
                       <div className="flex flex-wrap gap-1 mt-1">
                         {user.skills.slice(0, 2).map((skill) => (
                           <Badge key={skill} variant="outline" className="text-xs border-primary/30 text-primary">
@@ -90,9 +90,7 @@ export default function MatchesPage() {
                         ))}
                       </div>
                     </div>
-                    <div className="text-xs text-secondary/60">
-                      {formatDistanceToNow(matchedAt, { addSuffix: true })}
-                    </div>
+                    <div className="text-xs text-primary">{formatDistanceToNow(matchedAt, { addSuffix: true })}</div>
                   </CardContent>
                 </Card>
               </Link>
